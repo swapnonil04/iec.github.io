@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Payment Page</h1>
+        <img src="qr.png" alt="Payment Image" style="width: 100%; max-width: 500px;">
+        <p>Pay: ₹  <span id="paymentAmount"></span></p>
+        <p>You will be redirected to the main page in <span id="countdown">10</span> seconds</p>
+    </div>
+
+    <script>
+        // Get the calculated cost from session storage
+        var amount = sessionStorage.getItem("calculatedCost");
+
+        if (!isNaN(parseFloat(amount))) {
+            document.getElementById("paymentAmount").innerText = "₹" + parseFloat(amount).toFixed(2);
+        } else {
+            document.getElementById("paymentAmount").innerText = "Invalid Amount";
+        }
+
+        // Countdown
+        var seconds = 10;
+
+        function countdown() {
+            var countdownElement = document.getElementById('countdown');
+            countdownElement.innerText = seconds;
+
+            if (seconds > 0) {
+                seconds--;
+                setTimeout(countdown, 1000); // Call the function again after 1 second
+            } else {
+                window.location.href = 'acc2.html'; // Redirect after countdown
+            }
+        }
+
+        countdown(); // Start the countdown when the page loads
+    </script>
+</body>
+</html>

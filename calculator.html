@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Cost Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bill Calculator</h1>
+
+        <label for="stateSelect">Select State:</label>
+        <select id="stateSelect" onchange="updateUnitPrice()">
+            <option value="">Select a State</option>
+            <option value="maharashtra">Maharashtra</option>
+            <option value="karnataka">Karnataka</option>
+            <option value="westbengal">West Bengal</option>
+            <option value="delhi">Delhi</option>
+            <option value="tripura">Tripura</option>
+            <option value="arunachalpradesh">Arunachal Pradesh</option>
+            <option value="assam">Assam</option>
+            <option value="kerela">Kerela</option>
+            <option value="tamilnadu">Tamil Nadu</option>
+            <option value="odissa">Odissa</option>
+            <option value="punjab">Punjab</option>
+            <option value="uttarpradesh">Uttar Pradesh</option>
+            <option value="haryana">Haryana</option>
+            <option value="bihar">Bihar</option>
+        </select>
+
+        <button onclick="calculateCost()">Calculate Cost</button>
+        <p id="result"></p>
+        <button id="payNowButton" onclick="redirectToPaymentPage()" disabled><a href="payment.html" style="color:white; text-decoration: none;">Pay Now</a></button>
+    </div>
+
+    <script src="myscript.js"></script>
+</body>
+</html>

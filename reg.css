@@ -1,0 +1,221 @@
+ *{
+    margin:0;
+    padding:0;
+}
+#header1{
+    font-weight:bold;
+    font-size:70px;
+    color:#2b2827;
+    padding-left:10px;
+}
+#para1{
+    text-align:center;
+    font-weight:400;
+    color:#181c1f;
+}
+#section1{
+    height:100%;
+    width:100%;
+    background-color: #f0fac5;
+}
+.section{
+    margin:0;
+    padding:0;
+    height:100vh;
+    border:0;
+  }
+#para1
+{
+  font-size:30px;
+  padding-top:30px;
+  text-align:center;
+  padding:20px;
+}
+#list11{
+    margin-left:40px;
+    list-style-type: disc;
+    font-size:25px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  #list1{
+    margin-left:20px;
+    font-size: 30px;
+  }
+  #heading2{
+    font-size:40px;
+    font-family: madrid;
+    padding-top:20px;
+  }
+  #header2
+  {
+    font-size:60px;
+    font-weight:bold; 
+  } 
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-radius: 15px;
+  }
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #CAEAF0; /* citation colors */
+    background-clip: border-box;
+    border: 7.5px solid rgba(0,0,0,0.15);
+    border-radius:10px;
+    padding:5px;
+  }
+  .col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    border-radius: 15px;
+  }
+  .card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+  }
+  #section6{
+    margin:5%;
+    width:60%;
+    height:auto;
+  }
+  #header3{
+    background-color:  #007FFF;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  nav {
+    background-color: black;
+    overflow: hidden;
+  }
+
+  nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+
+#title{
+    color:white;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    background-color: black;
+    overflow: hidden;
+  }
+
+  nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+.box1{
+    color: white;
+    justify-content:start;
+}
+.box2{
+    justify-content:center;
+    text-align: center;
+}
+.box3{
+    margin-left:37%;
+    justify-content:end;
+    font-size:16px;
+}
+#navi{
+    align-items: center;
+    display:flex;
+    text-decoration: none;
+}
+.box{
+    align-items: center;
+    display: flex;
+    box-sizing:border-box;
+}
+#btn{
+  background: #1114d4;
+  background-image: -webkit-linear-gradient(top, #1114d4, #11999e);
+  background-image: -moz-linear-gradient(top, #1114d4, #11999e);
+  background-image: -ms-linear-gradient(top, #1114d4, #11999e);
+  background-image: -o-linear-gradient(top, #1114d4, #11999e);
+  background-image: linear-gradient(to bottom, #1114d4, #11999e);
+  -webkit-border-radius: 9;
+  -moz-border-radius: 9;
+  border-radius: 9px;
+  font-family: Arial;
+  color: #ffffff;
+  text-decoration: none;
+}
+#btn:hover{
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+.top {
+  display: inline-block;
+  vertical-align: top; /* Adjust the vertical alignment if needed */
+  padding: 14px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.top a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.top a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2edcb;
+  }

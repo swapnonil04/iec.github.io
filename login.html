@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Login</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #4490db;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container-box {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .login-form {
+      max-width: 330px;
+      margin: auto;
+    }
+
+    .login-form .form-signin-heading {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .sign-in {
+      color: white;
+      text-decoration: none;
+    }
+
+    .sign-in:hover {
+      color: white;
+      text-decoration: none;
+    }
+
+    .header-image {
+      max-width: 15%;
+      margin-bottom: 20px;
+    }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #signin{
+        color:white;
+        text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-box">
+  <div class="header-container">
+    <img src="logo.png" alt="Header Image" class="header-image">
+  </div>
+  <form class="form-signin login-form">
+    <h2 class="form-signin-heading">Login</h2>
+    <label for="inputUsername" class="sr-only">Username</label>
+    <input type="text" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
+    <br>
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+    <br>
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block"><a href="acc.html" id="signin">Sign in</a></button>
+    <!-- <button class="btn-sign-up" onclick="redirectToAccount()">Sign up</button> -->
+  </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script>
+  function validateLoginAndRedirect() {
+    var username = document.getElementById("inputUsername").value;
+    var password = document.getElementById("inputPassword").value;
+
+    // Check predefined values
+    if (username === "user123" && password === "pass123") {
+      alert("Login successful!");
+      // Redirect to the "acc.html" page
+      window.location.href = "acc.html";
+    } else {
+      alert("Invalid credentials. Please try again.");
+    }
+  }
+</script>
+  
+  </body>
+  </html>

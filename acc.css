@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #eeeade;
+  }
+  
+  .container {
+    max-width: 1000px; /* You can adjust the max-width as needed */
+    background-color: powderblue;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+    text-align: center; /* Center text within the container */
+  }
+  
+  .profile {
+    height:50%;
+    width: 50%;
+    border-radius: 50%;
+    margin-right: 20px; /* Add some spacing between the image and text */
+  }
+  .title {
+    text-align: center;
+    font-family:Verdana,Tahoma, sans-serif;
+  }
+  .text-container {
+    flex-grow: 1; /* Allow the text container to grow and take up remaining space */
+  }
+  .right-container{
+    padding-left: 100px;
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
+  .btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 9;
+    -moz-border-radius: 9;
+    border-radius: 9px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+  }
