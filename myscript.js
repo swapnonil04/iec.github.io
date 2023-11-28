@@ -71,10 +71,6 @@ function calculateCost() {
     payNowButton.disabled = false;
 }
 
-function redirectToPaymentPage() {
-    // Redirect to the payment page
-    window.location.href = 'payment.html';
-}
 
 const randomUnitsElement = document.getElementById('randomUnits');
 
