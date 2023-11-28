@@ -66,20 +66,20 @@
   <div class="header-container">
     <img src="logo.png" alt="Header Image" class="header-image">
   </div>
-  <form class="form-signin login-form">
+  <form class="form-signin login-form" id="loginForm">
     <h2 class="form-signin-heading">Login</h2>
-    <label for="inputUsername" class="sr-only">Username</label>
-    <input type="text" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
+    <label for="username" class="sr-only">Username</label>
+    <input type="text" id="username" class="form-control" placeholder="username" required autofocus>
     <br>
-    <label for="inputPassword" class="sr-only">Password</label>
-    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+    <label for="password" class="sr-only">Password</label>
+    <input type="password" id="password" class="form-control" placeholder="password" required>
     <br>
     <div class="checkbox mb-3">
       <label>
         <input type="checkbox" value="remember-me"> Remember me
       </label>
     </div>
-    <button class="btn btn-lg btn-primary btn-block"><a href="acc.html" id="signin">Sign in</a></button>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
     <!-- <button class="btn-sign-up" onclick="redirectToAccount()">Sign up</button> -->
   </form>
 </div>
@@ -88,21 +88,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-<script>
-  function validateLoginAndRedirect() {
-    var username = document.getElementById("inputUsername").value;
-    var password = document.getElementById("inputPassword").value;
-
-    // Check predefined values
-    if (username === "user123" && password === "pass123") {
-      alert("Login successful!");
-      // Redirect to the "acc.html" page
-      window.location.href = "acc.html";
-    } else {
-      alert("Invalid credentials. Please try again.");
-    }
-  }
-</script>
+<script src="app.js"></script>
   
   </body>
   </html>
