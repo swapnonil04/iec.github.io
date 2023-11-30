@@ -38,6 +38,6 @@ p {
 
 #paymentAmount {
     font-weight: bold;
-    color: #e44d26; /* Orange color, change as needed */
+    color: #e44d26; 
     font-size: 1.8em;
 }
