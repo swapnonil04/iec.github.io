@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
     if (authenticateUser(username, password)) {
-      // Store user data in local storage
       localStorage.setItem('username', username);
       localStorage.setItem('password', password);
 
