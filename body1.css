@@ -106,7 +106,7 @@ body {
 }
 .top {
   display: inline-block;
-  vertical-align: top; /* Adjust the vertical alignment if needed */
+  vertical-align: top;
   padding: 14px 0;
   display: flex;
   justify-content: space-between;
