@@ -15,7 +15,6 @@
     </div>
 
     <script>
-        // Get the calculated cost from session storage
         var amount = sessionStorage.getItem("calculatedCost");
 
         if (!isNaN(parseFloat(amount))) {
@@ -24,7 +23,7 @@
             document.getElementById("paymentAmount").innerText = "Invalid Amount";
         }
 
-        // Countdown
+      
         var seconds = 10;
 
         function countdown() {
@@ -33,13 +32,13 @@
 
             if (seconds > 0) {
                 seconds--;
-                setTimeout(countdown, 1000); // Call the function again after 1 second
+                setTimeout(countdown, 1000); 
             } else {
-                window.location.href = 'acc2.html'; // Redirect after countdown
+                window.location.href = 'acc2.html'; 
             }
         }
 
-        countdown(); // Start the countdown when the page loads
+        countdown(); 
     </script>
 </body>
 </html>
