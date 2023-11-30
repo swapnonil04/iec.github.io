@@ -8,26 +8,26 @@ body {
   }
   
   .container {
-    max-width: 1000px; /* You can adjust the max-width as needed */
+    max-width: 1000px; 
     background-color: powderblue;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
-    text-align: center; /* Center text within the container */
+    text-align: center; 
   }
   
   .profile {
     height:50%;
     width: 50%;
     border-radius: 50%;
-    margin-right: 20px; /* Add some spacing between the image and text */
+    margin-right: 20px; 
   }
   .title {
     text-align: center;
     font-family:Verdana,Tahoma, sans-serif;
   }
   .text-container {
-    flex-grow: 1; /* Allow the text container to grow and take up remaining space */
+    flex-grow: 1; 
   }
   .right-container{
     padding-left: 100px;
